@@ -21,9 +21,6 @@ var router = express.Router();
  * Failure: send an appropriate status code and message
  */
 router.get('/api', function(req, res) {
-	res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header("Access-Control-Allow-Methods", "GET", "POST", "PUT", "DELETE");
 	if ('subreddit' in req.query) { // if required query paramater was passed, get data from Reddit API
 		var url = 'https://www.reddit.com/r/' + req.query.subreddit +'/.json?limit=30&raw_json=1';
 
@@ -74,6 +71,7 @@ router.delete('/api', function(req, res) {
 });
 
 // Register routes
+router.all('*', cors());
 app.use('/', router); 
 app.use(express.static(__dirname + '/'));
 
