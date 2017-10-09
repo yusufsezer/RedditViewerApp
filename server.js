@@ -20,7 +20,7 @@ var router = express.Router();
  * Success: send data returned by HTTP GET to Reddit API
  * Failure: send an appropriate status code and message
  */
-router.get('/api', function(req, res) {
+router.get('/api', cors(), function(req, res) {
 	if ('subreddit' in req.query) { // if required query paramater was passed, get data from Reddit API
 		var url = 'https://www.reddit.com/r/' + req.query.subreddit +'/.json?limit=30&raw_json=1';
 
@@ -71,7 +71,7 @@ router.delete('/api', function(req, res) {
 });
 
 // Register routes
-router.all('*', cors());
+router.use('*', cors());
 app.use('/', router); 
 app.use(express.static(__dirname + '/'));
 
