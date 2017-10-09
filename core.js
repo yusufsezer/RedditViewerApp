@@ -1,11 +1,5 @@
 var redditViewer = angular.module('redditViewer', ['ngSanitize']);
 
-// redditViewer.config(['$httpProvider', function($httpProvider) {
-  
-//         $httpProvider.defaults.useXDomain = true;
-//         delete $httpProvider.defaults.headers.common['X-Requested-With'];
-// }]);
-
 // controller for web app
 redditViewer.controller('mainController', ['$scope', '$http', '$sce',
     function($scope, $http, $sce) {
@@ -16,7 +10,7 @@ redditViewer.controller('mainController', ['$scope', '$http', '$sce',
         // Make a HTTP GET request to the Reddit API to obtain JSON objects correspoding the articles in a subreddit
         $scope.fetchArticles = function() {
             $http({
-                url: "http://localhost:8080/api", 
+                url: "http://127.0.0.1:8080/api", 
                 method: "GET",
                 params: {subreddit: $scope.formData.text}  
             }).then(function(data){

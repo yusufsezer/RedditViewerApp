@@ -71,7 +71,7 @@ router.delete('/api', function(req, res) {
 });
 
 // Register routes
-router.use('*', cors());
+router.all('*', cors());
 app.use('/', router); 
 app.use(express.static(__dirname + '/'));
 
