@@ -17,6 +17,10 @@ The web app can be logically split into two components:
   
 The UI allows the user to enter the name of a subreddit. When the user clicks the "Fetch Articles" button, the Angular script associated with the UI makes a HTTP GET request to the RESTful API. The RESTful API uses the Reddit API to fetch the data of articles in the subreddit that the user specified (note that the RESTful API sanitizes this data before returning it). The UI then displays the data in a visually appealing manner.
 
+Note that the the web app (UI) and the RESTful API are actually running on the same AWS EC2 instance. The RESTful API can be accessed at a different endpoint. Specifically, appending <i>/api?subreddit=[query paramater]</i> will allow you to circumvent the UI and access the API directly. Note that <i>[query parameter]</i> is the name of the subreddit you wish to fetch from. 
+
+When you click the "Fetch Articles" button on the web app's UI, the web app makes an HTTP GET request to the API at <i><u>http://34.204.46.161:8080/api?subreddit=[whatever user entered into text field]</u></i>
+
 # Installation Instructions
 
 <p><b>Step 1: </b>Clone this repository using the git clone command.</br>
