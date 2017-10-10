@@ -23,8 +23,8 @@ When a user clicks the "Fetch Articles" button on the web app's UI, the web app 
 
 # Installation Instructions
 
-<p><b>Step 1: </b>Open a terminal and clone this repository using the git clone command as follows:</br><i> git clone https://github.com/yusufsezer/RedditViewerApp.git</i></br>
-<b>Step 2: </b>If not already installed, install Node.js and npm (node package manager).</br>
+<p><b>Step 1: </b>If not already installed, install git. Open a terminal and clone this repository using the git clone command as follows:</br><i> git clone https://github.com/yusufsezer/RedditViewerApp.git</i></br>
+<b>Step 2: </b>If not already installed, install Node.js and npm (node package manager).</br> 
 <b>Step 3: </b>In a terminal, navigate to the directory where you cloned the git repositiory. On linux platforms, run the following command: <i>sudo npm install package-lock</i></br>
   On windows platforms, run command prompt as an adminstrator and run the following command: <i>npm install package-lock</i></br>
 This installs the dependencies for the web app.</br>
