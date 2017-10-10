@@ -9,6 +9,14 @@ This repo contains a web app that displays recent articles/posts contained withi
   - Amazon AWS
   - JavaScript/HTML/CSS
   
+# How it works
+
+The web app can be logically split into two components: 
+  - the UI (handled with AngularJS, Bootstrap, Node.js and Express.js)
+  - the RESTful API (handled with Node.js and Express.js)
+  
+The UI allows the user to enter the name of a subreddit. When the user clicks the "Fetch Articles" button, the Angular script associated with the UI makes a HTTP GET request to the RESTful API. The RESTful API uses the Reddit API to fetch the data of articles in the subreddit that the user specified (note that the RESTful API sanitizes this data before returning it). The UI then displays the data in a visually appealing manner.
+
 # Installation Instructions
 
 <p><b>Step 1: </b>Clone this repository using the git clone command.</br>
