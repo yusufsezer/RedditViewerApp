@@ -8,3 +8,7 @@ This repo contains a web app that displays recent articles/posts contained withi
   - Postman
   - Amazon AWS
   - JavaScript/HTML/CSS
+  
+# Installation Instructions
+
+<b>Step 1:/b>
