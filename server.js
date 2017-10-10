@@ -47,7 +47,7 @@ router.get('/api', cors(), function(req, res) {
 });
 
 router.get('/', function(req, res) {
-          res.sendfile('index.html'); // load HTML with embedded Angular
+          res.sendFile('index.html'); // load HTML with embedded Angular
 });
 
 // Unsupported
