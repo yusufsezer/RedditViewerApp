@@ -1,0 +1,26 @@
+.jumbotron {
+	background-color: #007CA6;
+	color: #B4DCED;
+}
+ 
+.btn-primary {
+    background: #007CA6;
+    color: #B4DCED;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #B4DCED;
+    color: #007CA6;
+}
+
+.panel-default > .panel-heading {
+  color: #007CA6;
+  background-color: #E8F8FF;
+  border-color: #ddd;
+}
+
+.panel-default > .panel-footer {
+  color: #007CA6;
+  background-color: #E8F8FF;
+  border-color: #ddd;
+}
