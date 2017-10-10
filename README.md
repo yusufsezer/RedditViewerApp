@@ -19,7 +19,7 @@ The web app's UI allows the user to enter the name of a subreddit. When the user
 
 The web app (UI) and the RESTful API are actually running on the same Node server on an AWS EC2 instance. The RESTful API can be accessed at a different endpoint. Specifically, appending <i>/api?subreddit=[query paramater]</i> to the url of the web app will allow you to circumvent the UI and access the API directly. Note that <i>[query parameter]</i> is the name of the subreddit you wish to fetch from. 
 
-When a user clicks the "Fetch Articles" button on the web app's UI, the web app makes an HTTP GET request to the API at <i><span class ="nolink">http://34.204.46.161:8080/api?subreddit=_______</span></i> where ______ is the text that the user entered into the text field. This is reiterated in the <b>Link to Web App on AWS</b> section.
+When a user clicks the "Fetch Articles" button on the web app's UI, the web app makes an HTTP GET request to the API at <i><span class ="nolink">http://34.204.46.161:8080/api?subreddit=_______</span></i> where ______ is the text that the user entered into the text field. This is reiterated in the <b>Link to Web App/RESTful API on AWS</b> section.
 
 # Installation Instructions
 
@@ -35,6 +35,6 @@ This installs the dependencies for the web app.</br>
 
 I have included a few Postman tests for the API in Cisco_API_Project.postman_collection.json. You should be able to import these tests from Postman by clicking <i>File</i> --> <i>import</i> -->  <i>Choose Files</i> and then selecting Cisco_API_Project.postman_collection.json. Note that these tests assume that the web app is running on <i>localhost</i>!
 
-# Link to Web App on AWS
-The web app is currently deployed and running on an Amazon EC2 instance. You can access the web app via the EC2's public elastic IP: http://34.204.46.161:8080/ 
-The api can be accessed directly at http://34.204.46.161:8080/api. You should see the following: <i>The following required parameters were not passed: subreddit</i>. This is because no subreddit was specified. To specify the subreddit, navigate to http://34.204.46.161:8080/api?subreddit=_____ where _____ is the name of the subreddit you wish to fetch from.
+# Link to Web App/RESTful API on AWS
+The web app and RESTful API is currently deployed and running on an Amazon EC2 instance. You can access the web app via the EC2's public elastic IP: http://34.204.46.161:8080/ 
+The api can be accessed directly at http://34.204.46.161:8080/api. You should see the following in your browser: <i>The following required parameters were not passed: subreddit</i>. This is because no subreddit was specified. To specify the subreddit, navigate to http://34.204.46.161:8080/api?subreddit=_____ where _____ is the name of the subreddit you wish to fetch from.
