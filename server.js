@@ -1,5 +1,4 @@
 // Dependencies
-// var cors = require('cors');
 var express 	= require('express');
 var app 		= express();
 var bodyParser 	= require('body-parser');
@@ -71,7 +70,6 @@ router.delete('/api', function(req, res) {
 });
 
 // Register routes
-// router.all('*', cors());
 app.use('/', router); 
 app.use(express.static(__dirname + '/'));
 
