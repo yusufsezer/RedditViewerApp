@@ -10,7 +10,7 @@ redditViewer.controller('mainController', ['$scope', '$http', '$sce',
         // Make a HTTP GET request to the Reddit API to obtain JSON objects correspoding the articles in a subreddit
         $scope.fetchArticles = function() {
             $http({
-                url: "http://127.0.0.1:8080/api", 
+                url: "http://34.204.46.161:8080/api", 
                 method: "GET",
                 params: {subreddit: $scope.formData.text}  
             }).then(function(data){
