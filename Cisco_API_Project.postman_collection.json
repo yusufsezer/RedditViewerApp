@@ -1,0 +1,105 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Cisco API Project",
+		"_postman_id": "e36b3079-16ec-05c6-5c9e-8963c72857e0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api?subredit=food",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Test invalid paramater name; response returns correct error message\", function () {",
+							"    pm.response.to.have.body(\"The following required parameters were not passed: subreddit\");",
+							"});",
+							"",
+							"pm.test(\"Test invalid paramater name; response returns correct status code\", function () {",
+							"    pm.response.to.have.status(422);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api?subred=food",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "subred",
+							"value": "food",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Tests the edge case where user mistypes the name of the query paramater \"subreddit.\""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api?subredit=food copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Test invalid paramater name; response returns correct error message\", function () {",
+							"    pm.response.to.have.body(\"The following required parameters were not passed: subreddit\");",
+							"});",
+							"",
+							"pm.test(\"Test invalid paramater name; response returns correct status code\", function () {",
+							"    pm.response.to.have.status(422);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/api?subred=food",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "subred",
+							"value": "food",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Tests the edge case where user mistypes the name of the query paramater \"subreddit.\""
+			},
+			"response": []
+		}
+	]
+}
