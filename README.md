@@ -13,7 +13,7 @@
 
 <p><b>Step 1: </b>Clone this repository using the git clone command.</br>
 <b>Step 2: </b>If not already installed, install Node.js and npm (node package manager).</br>
-<b>Step 3: </b>On linux platforms, run the following command: <i>sudo npm install package-lock</i></br>
+<b>Step 3: </b>In a terminal, navigate to the directory where you cloned the git repositiory. On linux platforms, run the following command: <i>sudo npm install package-lock</i></br>
   On windows platforms, run command prompt as an adminstrator and run the following command: <i>npm install package-lock</i></br>
 This installs the dependencies for the web app.</br>
 <b>Step 4: </b>Open core.js in a text editor of your choice. On line 13, set the url to the public IP of the machine on which you are installing the web app. For development purposes, localhost should suffice.</br>Line 13 should look like this when you are done: <i>url: "http://<public ip here>:8080/api"</i></br>
