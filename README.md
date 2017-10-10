@@ -6,7 +6,7 @@ This repo contains a web app that displays recent articles/posts contained withi
   - AngularJS
   - Bootstrap
   - Postman
-  - Amazon AWS
+  - AWS
   - JavaScript/HTML/CSS
   
 # How it works
