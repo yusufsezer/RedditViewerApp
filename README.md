@@ -22,3 +22,6 @@ This installs the dependencies for the web app.</br>
 <b>Step 6: </b>In a browser, navigate to <i>http://[public ip here]:8080</i> Here, you should see the GUI for the app. If you wish to access the api directly, navigate to <i>http://[public ip here]:8080/api?subreddit=[your query here]</i>. Note that <i>[public ip here]</i> is the same ip that you set in Step 4, and that <i>[your query here]</i> is the name of the subreddit that you want to fetch articles/posts from.</p>
 
 I have included a few Postman tests for the API in Cisco_API_Project.postman_collection.json. You should be able to import these tests from Postman by clicking <i>File</i> --> <i>import</i> -->  <i>Choose Files</i> and then selecting Cisco_API_Project.postman_collection.json. Note that these tests assume that the web app is running on <i>localhost</i>!
+
+# Link to Web App on AWS
+The web app is currently deployed and running on an Amazon EC2 instance. You can access the web app via the EC2's public elastic IP: http://http://34.204.46.161:8080/ and the api can be accessed directly at http://http://34.204.46.161:8080/api?subreddit=[query paramater] where [query paramater] is the name of the subreddit from which you want to fetch articles/posts.
