@@ -1,5 +1,5 @@
 // Dependencies
-var cors = require('cors');
+// var cors = require('cors');
 var express 	= require('express');
 var app 		= express();
 var bodyParser 	= require('body-parser');
@@ -20,7 +20,7 @@ var router = express.Router();
  * Success: send data returned by HTTP GET to Reddit API
  * Failure: send an appropriate status code and message
  */
-router.get('/api', cors(), function(req, res) {
+router.get('/api', function(req, res) {
 	if ('subreddit' in req.query) { // if required query paramater was passed, get data from Reddit API
 		var url = 'https://www.reddit.com/r/' + req.query.subreddit +'/.json?limit=30&raw_json=1';
 
