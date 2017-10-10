@@ -25,4 +25,4 @@ I have included a few Postman tests for the API in Cisco_API_Project.postman_col
 
 # Link to Web App on AWS
 The web app is currently deployed and running on an Amazon EC2 instance. You can access the web app via the EC2's public elastic IP: http://34.204.46.161:8080/ 
-The api can be accessed directly at http://34.204.46.161:8080/api. You should see the following: <i>The following required parameters were not passed: subreddit</i>. This is because no subreddit was specified. To specify the subreddit, navigate to http://34.204.46.161:8080/api?subreddit=[query parameter] where [query paramater] is the name of the subreddit you wish to fetch from.
+The api can be accessed directly at http://34.204.46.161:8080/api. You should see the following: <i>The following required parameters were not passed: subreddit</i>. This is because no subreddit was specified. To specify the subreddit, navigate to http://34.204.46.161:8080/api?subreddit=query where query is the name of the subreddit you wish to fetch from.
