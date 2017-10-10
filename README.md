@@ -19,7 +19,7 @@ The UI allows the user to enter the name of a subreddit. When the user clicks th
 
 Note that the the web app (UI) and the RESTful API are actually running on the same AWS EC2 instance. The RESTful API can be accessed at a different endpoint. Specifically, appending <i>/api?subreddit=[query paramater]</i> will allow you to circumvent the UI and access the API directly. Note that <i>[query parameter]</i> is the name of the subreddit you wish to fetch from. 
 
-When you click the "Fetch Articles" button on the web app's UI, the web app makes an HTTP GET request to the API at <i><span class ="nolink">http://34.204.46.161:8080/api?subreddit=_______</span></i> where ______ is the text that the user entered into the text field.
+When you click the "Fetch Articles" button on the web app's UI, the web app makes an HTTP GET request to the API at <i><span class ="nolink">http://34.204.46.161:8080/api?subreddit=_______</span></i> where ______ is the text that the user entered into the text field. This is reiterated in the <b>Link to Web App on AWS</b> section.
 
 # Installation Instructions
 
